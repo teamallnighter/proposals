@@ -41,7 +41,7 @@ collections:
 
   - name: proposal
     label: Proposal
-    folder: source/proposal/
+    folder: data/proposals/
     extension: .html.md
     format: frontmatter
     create: true
