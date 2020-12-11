@@ -1,0 +1,13 @@
+.proposal-detail
+  .image style=background_image(image_path(proposal.image))
+  .content
+    .meta
+      h1 = proposal.title + proposal.ocp
+      h2 = proposal.addy
+
+      .price
+        - currency = data.settings.units.currency || '$' 
+        span = currency + proposal.price.to_s 
+
+    .body
+      = markdown proposal.body
