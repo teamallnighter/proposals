@@ -39,6 +39,24 @@ collections:
       - {label: Image, name: image, widget: image}
       - {label: Body, name: body, widget: markdown}
 
+  - name: proposal
+    label: Proposal
+    folder: source/proposal/
+    extension: .html.md
+    format: frontmatter
+    create: true
+    slug: '{{title}}'
+    fields:
+      - {label: Title, name: title, widget: string, required: true}
+      - {label: Publish Date, name: date, widget: datetime}
+      - {label: Description, name: description, widget: string}
+      - {label: Image, name: image, widget: image}
+      - {label: Body, name: body, widget: markdown}
+  
+      - {label: Project Name, name: project, widget: string, required: true}
+      - {label: Address, name: addy, widget: string, required: false}
+      - {label: Condo Corp, name: ocp, widget: string, required: false}
+
   - name: pages
     label: Pages
     files:
